@@ -44,7 +44,7 @@ const RemoveBtn = styled.button`
     transition: background-color 0.3s ease;
 
     &:hover {
-        background-color: #3367d6;
+        background-color: #cc3d3d;
     }
 
     &:focus {
