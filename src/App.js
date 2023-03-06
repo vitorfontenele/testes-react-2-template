@@ -27,7 +27,7 @@ function App() {
         const newCart = [...cart]
         
         const productExists = newCart.find(
-            productInCart => productInCart.id == productToAdd.id
+            productInCart => productInCart.id === productToAdd.id
         )
 
         if (productExists) {
@@ -43,10 +43,10 @@ function App() {
         const newCart = [...cart]
 
         const indexToRemove = cart.findIndex(
-            (productInCart) => productInCart.id == productToRemove.id
+            (productInCart) => productInCart.id === productToRemove.id
         )
 
-        if (indexToRemove != -1) {
+        if (indexToRemove !== -1) {
             newCart.splice(indexToRemove, 1)
         }
 
